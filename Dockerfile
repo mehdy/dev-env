@@ -6,7 +6,7 @@ ENV TERM xterm-256color
 
 RUN apt update
 RUN apt upgrade -y
-RUN apt install -y curl wget git make zsh vim build-essential openssl gnupg2 jq fd-find ripgrep bat powerline fonts-powerline
+RUN apt install -y curl wget git make zsh vim build-essential libssl-dev openssl gnupg2 jq fd-find ripgrep bat powerline fonts-powerline
 
 RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 RUN ~/.fzf/install --all --no-zsh
